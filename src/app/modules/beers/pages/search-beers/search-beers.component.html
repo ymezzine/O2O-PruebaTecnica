@@ -1,0 +1,9 @@
+<form [formGroup]="searchForm">
+    <mat-form-field>
+        <input matInput (change)="search()" placeholder="Food" formControlName="food">
+    </mat-form-field>
+    <div class="buttons">
+        <button mat-raised-button (click)="reset()" >Reiniciar</button>
+    </div>
+</form>
+<ui-table [columns]="columns" [data]="data"></ui-table>

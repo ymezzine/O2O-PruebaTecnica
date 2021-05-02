@@ -1,0 +1,19 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+form{
+  padding: 3em;
+
+  .buttons{
+    display: flex;
+    justify-content: flex-end;
+
+    button{
+        margin-left: .5rem;
+    }
+  }
+  mat-form-field, div.buttons{
+      width: 100%;
+  }
+}
